@@ -1,4 +1,4 @@
-# Raspberry Pi Cross Compiler
+# Raspberry Pi Cross-Compiler
 
 Raspberry Pi cross-compiler toolchain which contains:
 
