@@ -25,7 +25,7 @@ docker build -t cross-pi-gcc docker
 * Build cross-compiler toolchain:
 
 ```shell
-docker run -it --rm -v ~/out:/out cross-pi-gcc -c build.sh
+docker run -it --rm -v ~/out:/out cross-pi-gcc -c ./build.sh
 ```
 
 **Note:** The `cross-gcc-12.2.0-pi_64.tar.gz` file will saved to `~/out` directory.
