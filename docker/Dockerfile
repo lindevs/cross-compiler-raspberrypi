@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /rpi-cross
+WORKDIR /cross-pi-gcc
 
 RUN apt-get update \
     && apt-get install -y \
