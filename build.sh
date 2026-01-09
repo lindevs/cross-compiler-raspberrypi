@@ -1,8 +1,8 @@
 #!/bin/bash
 
-GCC_VERSION=12.2.0
-GLIBC_VERSION=2.36
-BINUTILS_VERSION=2.40
+GCC_VERSION=14.2.0
+GLIBC_VERSION=2.41
+BINUTILS_VERSION=2.44
 GDB_VERSION=10.2
 
 LANGUAGES=c,c++,fortran
@@ -128,5 +128,5 @@ make -s install DESTDIR=$INSTALLDIR
 echo "Creating TAR archive ..."
 cd $BUILDDIR
 tar czf cross-gcc-$GCC_VERSION-pi_$FOLDER_VERSION.tar.gz cross-pi-gcc-$GCC_VERSION-$FOLDER_VERSION
-mkdir -p /out
-mv cross-gcc-$GCC_VERSION-pi_$FOLDER_VERSION.tar.gz /out
+mkdir -p /app/build
+mv cross-gcc-$GCC_VERSION-pi_$FOLDER_VERSION.tar.gz /app/build
